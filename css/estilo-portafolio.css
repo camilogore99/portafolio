@@ -44,7 +44,7 @@
   display: inline-block;
   height: 600px;
   left: 26%;
-  width: 75%;
+  width: 74%;
 }
 .body-image {
   position: relative;
@@ -72,11 +72,40 @@
 .biography {
   color: green;
   border: 20px;
-  padding: 10px;
+  padding-left: 50px;
   font-family: sans-serif;
 }
 .about-me {
-  padding: 10px;
+  padding-left: 50px;
   font-weight: 500;
   font-size: 25px;
+}
+/*
+=============BODY CARD====================
+*/
+.container-about-me {
+  display: flex;
+  height: 600px;
+  width: 91%;
+  padding-left: 50px;
+}
+.found {
+  padding: 5px;
+  height: 300px;
+  width: 310px;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/374016/pexels-photo-374016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.card {
+  border: solid black 10px;
+  height: 330px;
+  width: 800px;
+}
+.i-am-subtitle {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.i-am-parrafo {
+  padding-left: 20px;
+  font-family: sans-serif;
 }
