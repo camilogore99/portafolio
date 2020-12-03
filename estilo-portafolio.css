@@ -3,12 +3,16 @@
   padding: 0;
   margin: 0;
 }
+/*
+===============MENU=================== 
+*/
 .menu {
-  position: sticky;
+  position: fixed;
+  display: inline-block;
   height: 100vh;
-  width: 25%;
+  width: 24%;
   background-color: black;
-  border: solid black 10px;
+  border: solid black 13px;
 }
 .img-logo {
   position: absolute;
@@ -32,13 +36,47 @@
   text-align: center;
   border-bottom: solid white 1px;
 }
+/* 
+======================BODY===============
+*/
 .body {
-  height: ;
+  position: relative;
+  display: inline-block;
+  height: 600px;
+  left: 26%;
+  width: 75%;
 }
 .body-image {
+  position: relative;
   background-size: cover;
   background-image: url("https://cdn.pixabay.com/photo/2019/04/30/12/34/smart-4168483_960_720.jpg");
-  height: 700px;
+  height: 600px;
   width: 100%;
-  border: solid black;
+}
+.body-tittle {
+  color: honeydew;
+  text-align: center;
+}
+.tittle-body {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  align-items: center;
+}
+/*
+============= BIOGRAPHY============= 
+*/
+.only {
+  padding: 40px;
+}
+.biography {
+  color: green;
+  border: 20px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.about-me {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 25px;
 }
