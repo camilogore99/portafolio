@@ -70,28 +70,75 @@
   align-items: center;
 }
 .img-camilo {
-  position: relative;
-  top: 1px;
+  position: absolute;
+  top: 14%;
   background-image: url(https://scontent.feoh6-1.fna.fbcdn.net/v/t1.0-9/129936830_430304301308497_9016373882864560418_o.jpg?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_eui2=AeHJLyPeTlf4n5pYjJ0-EntO7xHoeWHL7n3vEeh5YcvufbP3hkrum2LrWvLViznhvIbS4Y3OSlWBiIjl89fTniyN&_nc_ohc=AtJYPNviBTAAX9_ytoX&_nc_ht=scontent.feoh6-1.fna&oh=ec27e963321f678c1d53d940fc08b086&oe=5FEE6431);
   height: 200px;
   width: 200px;
   background-size: cover;
   border-radius: 50%;
 }
-.body-tittle {
-  color: honeydew;
-  text-align: center;
-}
-.tittle-body {
+.body-tittle-name {
   color: white;
-  align-items: center;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 70px;
+  text-transform: uppercase;
+}
+.body-subtitle {
+  color: black;
+  padding-top: 10px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  * {
+    padding: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .body {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    width: 100%;
+  }
+  .img-camilo {
+    position: absolute;
+    top: 8%;
+    background-image: url(https://scontent.feoh6-1.fna.fbcdn.net/v/t1.0-9/129936830_430304301308497_9016373882864560418_o.jpg?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_eui2=AeHJLyPeTlf4n5pYjJ0-EntO7xHoeWHL7n3vEeh5YcvufbP3hkrum2LrWvLViznhvIbS4Y3OSlWBiIjl89fTniyN&_nc_ohc=AtJYPNviBTAAX9_ytoX&_nc_ht=scontent.feoh6-1.fna&oh=ec27e963321f678c1d53d940fc08b086&oe=5FEE6431);
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .container-about-me {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 10px;
+    border-bottom: 20px;
+  }
+  .i-am-subtitle {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .i-am-parrafo {
+    padding-right: 100px;
+    font-family: sans-serif;
+    font-size: 19px;
+  }
+  .container-what-i-do {
+    margin-top: 200px;
+  }
 }
 /*
 ============= BIOGRAPHY============= 
 */
-.only {
-  padding: 40px;
-}
 .biography {
   color: green;
   padding-top: 40px;
@@ -112,12 +159,12 @@
 }
 .container-about-me {
   display: flex;
-  height: 600px;
+  height: 440px;
   width: 91%;
   padding-left: 50px;
   border-bottom: 20px;
 }
-.found {
+.background-abot-me {
   position: relative;
   right: 20px;
   bottom: 20px;
@@ -130,7 +177,7 @@
 .card {
   border: solid black 10px;
   height: 310px;
-  width: 800px;
+  width: 320px;
 }
 .i-am-subtitle {
   padding-left: 20px;
@@ -138,6 +185,54 @@
 }
 .i-am-parrafo {
   padding-left: 20px;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+.button-cv {
+  padding: 20px;
+  background-color: #66b95c;
+  color: white;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.button-send-message {
+  padding: 20px;
+  background-color: #66b95c;
+  color: white;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+/*
+=============WHAT I DO ====================
+*/
+.services {
+  color: green;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-family: sans-serif;
+}
+.what-i-do {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.creative-design {
+  height: 300px;
+  padding: 30px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 8px;
+}
+.subtittle-create-design {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.paragraph-create-design {
   font-family: sans-serif;
   font-size: 19px;
 }
