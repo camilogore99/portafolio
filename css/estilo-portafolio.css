@@ -6,6 +6,9 @@
 /*
 ===============MENU=================== 
 */
+.menu-mobile {
+  display: none;
+}
 .menu {
   position: fixed;
   display: inline-block;
@@ -257,6 +260,21 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .menu-mobile {
+    display: contents;
+  }
+  .hide {
+    display: none;
+  }
+  .nav {
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 50px;
+  }
+
   .menu {
     position: relative;
     left: -100%;
@@ -350,6 +368,21 @@
     left: -100%;
     display: none;
   }
+  .menu-mobile {
+    display: contents;
+  }
+  .hide {
+    display: none;
+  }
+  .nav {
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 50px;
+  }
+
   .container-all-body {
     position: absolute;
     left: 0%;
@@ -428,9 +461,23 @@
   }
   .menu {
     position: fixed;
-    left: -100%;
     display: none;
   }
+  .menu-mobile {
+    display: contents;
+  }
+  .hide {
+    display: none;
+  }
+  .nav {
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  }
+
   .container-all-body {
     position: absolute;
     left: 0%;
