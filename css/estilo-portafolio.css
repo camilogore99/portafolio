@@ -6,8 +6,8 @@
 /*
 ===============MENU=================== 
 */
-.menu-mobile {
-  display: none;
+.hide {
+  display: block;
 }
 .menu {
   position: fixed;
@@ -47,6 +47,28 @@
   top: 92%;
   left: 80px;
 }
+.mobile-menu {
+  display: none;
+  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: seashell;
+  z-index: 1;
+  width: 100%;
+}
+.mobile-menu-body nav ul li{
+  position: relative;
+  color: #000;
+}
+.close-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #000;
+  font-size: 2rem;
+}
 /* 
 ======================BODY===============
 */
@@ -67,9 +89,24 @@
   position: relative;
   background-size: cover;
   background-image: url("https://cdn.pixabay.com/photo/2019/04/30/12/34/smart-4168483_960_720.jpg");
+  background-position: center;
+  width: 100;
   height: 650px;
   justify-content: center;
   align-items: center;
+}
+.body-image .open-menu {
+  color: #fff;
+  font-size: 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+@media only screen and (min-width: 991px) {
+  .body-image .open-menu {
+    display: none;
+  }
 }
 .img-camilo {
   position: absolute;
@@ -167,6 +204,7 @@
 /*
 =============WHAT I DO ====================
 */
+
 .services {
   color: green;
   margin-bottom: 20px;
@@ -259,6 +297,9 @@
   .row-cards {
     display: flex;
     flex-wrap: wrap;
+  }
+  .main-container-what-i-do {
+    padding-top: 10rem;
   }
   .menu-mobile {
     display: contents;
